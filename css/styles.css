@@ -89,8 +89,18 @@ h3 {
 }
 
 .profile-photo {
-  transition: transform 0.3s ease;
+    width: 160px;
+    height: 160px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 3px solid #B8A392;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
+
 
 .profile-photo:hover {
   transform: scale(1.04);
@@ -617,10 +627,15 @@ line-height: normal;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .wrapper {
-        flex-direction: column;
+@media screen and (max-width: 768px) {
+    .sidebar img.profile-photo {
+        width: 160px;
+        height: 160px;
+        max-width: none;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
     }
+
 
     .sidebar {
         width: 100%;
@@ -692,4 +707,6 @@ line-height: normal;
         color: #2C2926;
     }
 }
+
+
 
