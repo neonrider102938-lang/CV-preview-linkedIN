@@ -708,5 +708,35 @@ line-height: normal;
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Main-Container {
+        width: 100%;
+        padding: 35px 25px;
+        box-sizing: border-box;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-shrink: 0;
+        padding: 30px 0;
+        box-sizing: border-box;
+    }
+
+    .sidebar-content {
+        width: 100%;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+
+}
+
 
 
